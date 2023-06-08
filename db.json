@@ -21,6 +21,28 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Criar tela de login",
+      "budget": "7000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Game GOD",
+      "budget": "15000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [
