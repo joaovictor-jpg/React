@@ -26,17 +26,17 @@ function Projects() {
     useEffect(() => {
         setTimeout(() => {
             fetch('http://localhost:5000/project', {
-            method: 'GET',
-            headers: {
-                'Content-type': 'application/json',
-            },
-        })
-        .then((resp) => resp.json())
-        .then((data) => {
-            setProjects(data)
-            setRemoveLoading(true)
-        })
-        .catch((err) => console.log(err))
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then((resp) => resp.json())
+            .then((data) => {
+                setProjects(data)
+                setRemoveLoading(true)
+            })
+            .catch((err) => console.log(err))
         }, 300);
     }, [])
 
@@ -44,7 +44,7 @@ function Projects() {
         fetch(`http://localhost:5000/project/${id}`, {
             method: 'DELETE',
             headers: {
-                'Content-type': 'application/json',
+                'Content-Type': 'application/json',
             },
         })
         .then((resp) => resp.json())
