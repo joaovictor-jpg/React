@@ -12,11 +12,11 @@
       "id": 1
     },
     {
-      "name": "Backend - Info School",
-      "budget": "20000",
+      "name": "login screen - Info School",
+      "budget": "10312",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
