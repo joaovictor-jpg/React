@@ -7,19 +7,33 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1200,
+      "services": [
+        {
+          "name": "Professor",
+          "cost": "1200",
+          "description": "Novo instrutor de informática",
+          "id": "d6a78ae4-c2b7-4c50-a290-39de4328a2a6"
+        }
+      ],
       "id": 1
     },
     {
-      "name": "login screen - Info School",
+      "name": "login screen",
       "budget": "10312",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1000,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "1000",
+          "description": "teste",
+          "id": "1b544636-d50a-4be0-bda0-be2ea3b1e5b1"
+        }
+      ],
       "id": 2
     }
   ],
