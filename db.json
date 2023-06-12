@@ -7,13 +7,19 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1200,
+      "cost": 3200,
       "services": [
         {
           "name": "Professor",
           "cost": "1200",
           "description": "Novo instrutor de informática",
           "id": "d6a78ae4-c2b7-4c50-a290-39de4328a2a6"
+        },
+        {
+          "name": "Tecnicô em informática",
+          "cost": "2000",
+          "description": "Fazer as manutenções das maquinas",
+          "id": "5676c418-7f2e-4f95-9bb3-35f5d9f87e2d"
         }
       ],
       "id": 1

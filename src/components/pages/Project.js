@@ -10,6 +10,7 @@ import Container from '../layout/Container';
 import ProjectForm from '../project/ProjectForm';
 import Message from '../layout/Message';
 import ServiceForm from '../service/ServiceForm';
+import ServiceCard from '../service/ServiceCard';
 
 
 function Project() {
@@ -20,6 +21,7 @@ function Project() {
     const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
+    const [services, setServices] = useState([])
 
     useEffect(() => {
         setTimeout(() => {
@@ -32,6 +34,7 @@ function Project() {
             .then((resp) => resp.json())
             .then((data) => {
                 setProject(data)
+                setServices(data.services)
             })
             .catch((err) => console.log(err))
         }, 300)
@@ -105,14 +108,12 @@ function Project() {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            //setProject(data)
-            //setShowProjectForm(!showProjectForm)
-            //setMessage('Projeto Atualizado')
-            //setType('success')
-            console.log(data)
+            setShowServiceForm(!showServiceForm)
         })
         .catch((err) => console.log(err))
     }
+
+    function removeService() {}
 
     return (
         <>
@@ -164,7 +165,19 @@ function Project() {
                         </div>
                         <h2>Service</h2>
                         <Container className='start'>
-                            <p>itens services</p>
+                            {services.length > 0 &&
+                                services.map((service) => (
+                                    <ServiceCard
+                                        id={service.id}
+                                        name={service.name}
+                                        cost={service.cost}
+                                        description={service.description}
+                                        key={service.id}
+                                        handleRemove={removeService}
+                                    />
+                                ))
+                            }
+                            {services.length === 0 && <h3>Não há serviços</h3>}
                         </Container>
                     </Container>
                 </div>
